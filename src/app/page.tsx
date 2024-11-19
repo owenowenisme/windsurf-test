@@ -1,8 +1,19 @@
+import dynamic from 'next/dynamic'
 import Layout from "@/components/layout"
-import { Hero } from "@/components/sections/hero"
-import { Skills } from "@/components/sections/skills"
-import { Projects } from "@/components/sections/projects"
-import { Contact } from "@/components/sections/contact"
+
+// Dynamically import client components with ssr disabled
+const Hero = dynamic(() => import("@/components/sections/hero").then(mod => mod.Hero), 
+  { ssr: false }
+)
+const Skills = dynamic(() => import("@/components/sections/skills").then(mod => mod.Skills), 
+  { ssr: false }
+)
+const Projects = dynamic(() => import("@/components/sections/projects").then(mod => mod.Projects), 
+  { ssr: false }
+)
+const Contact = dynamic(() => import("@/components/sections/contact").then(mod => mod.Contact), 
+  { ssr: false }
+)
 
 export default function Home() {
   return (

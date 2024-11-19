@@ -25,7 +25,7 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiDocker,
-  SiAmazonaws,
+  SiAmazon,
   SiGithubactions,
   SiGit,
 } from "@icons-pack/react-simple-icons"
@@ -77,7 +77,7 @@ const skills = [
     skills: [
       { name: "Docker", level: 90, icon: SiDocker },
       { name: "Kubernetes", level: 85, icon: SiKubernetes },
-      { name: "AWS", level: 85, icon: SiAmazonaws },
+      { name: "AWS", level: 85, icon: SiAmazon },
       { name: "GitHub Actions", level: 90, icon: SiGithubactions },
     ],
   },
@@ -88,7 +88,7 @@ const skills = [
       { name: "Git", level: 95, icon: SiGit },
       { name: "CI/CD", level: 90, icon: SiGithubactions },
       { name: "Docker", level: 90, icon: SiDocker },
-      { name: "AWS", level: 85, icon: SiAmazonaws },
+      { name: "AWS", level: 85, icon: SiAmazon },
     ],
   },
 ]
@@ -178,3 +178,5 @@ export function Skills() {
     </section>
   )
 }
+
+export default Skills
